@@ -1,5 +1,7 @@
+import { ListElementStyle } from 'components/Statistics/Statistics.styled';
+
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <ul>
+  <ListElementStyle>
     <li>good: {good}</li>
     <li>neutral: {neutral}</li>
     <li>bad: {bad}</li>
@@ -7,7 +9,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <li>
       Positive feedback: {positivePercentage > 0 ? `${positivePercentage}%` : 0}
     </li>
-  </ul>
+  </ListElementStyle>
 );
 
 export default Statistics;
